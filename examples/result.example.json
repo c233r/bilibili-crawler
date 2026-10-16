@@ -1,0 +1,46 @@
+[
+  {
+    "video_path": "/path/to/downloads/videos/example_video_a.mp4",
+    "status": "discarded",
+    "reason": "满足率 3.3% < 50%",
+    "initial_ratio": 0.0333,
+    "analysis_level": "initial"
+  },
+  {
+    "video_path": "/path/to/downloads/videos/example_video_b.mp4",
+    "status": "discarded",
+    "reason": "精细化分析第1轮后满足率 0.0% < 50%",
+    "initial_ratio": 0.5,
+    "final_ratio": 0.0,
+    "analysis_level": "refined_iteration_1",
+    "iterations": 1
+  },
+  {
+    "video_path": "/path/to/downloads/videos/example_video_c.mp4",
+    "status": "saved",
+    "reason": "满足率 72.7% > 70%",
+    "output_paths": [
+      "/path/to/downloads/videos/output/example_video_c_1_0-30.mp4",
+      "/path/to/downloads/videos/output/example_video_c_2_90-330.mp4"
+    ],
+    "initial_ratio": 0.625,
+    "final_ratio": 0.7273,
+    "analysis_level": "refined",
+    "segments": [
+      [0, 30.0],
+      [90.0, 330.0]
+    ]
+  },
+  {
+    "video_path": "/path/to/downloads/videos/example_video_d.mp4",
+    "status": "saved",
+    "reason": "满足率 100.0% > 70%",
+    "output_paths": [
+      "/path/to/downloads/videos/output/example_video_d.mp4"
+    ],
+    "initial_ratio": 1.0,
+    "final_ratio": 1.0,
+    "analysis_level": "initial",
+    "segments": null
+  }
+]

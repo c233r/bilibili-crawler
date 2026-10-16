@@ -1,0 +1,7 @@
+{
+  "download_path": "./downloads",
+  "cookies_path": "./bilibili爬虫/src/cookie.txt",
+  "page_size": 20,
+  "use_ytdlp": true,
+  "download_audio": true
+}

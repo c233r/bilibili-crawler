@@ -1,0 +1,10 @@
+{
+    "api_key": "",
+    "model": "glm-4v-flash",
+    "interval_seconds": 60,
+    "prompt": "请判断这张图片的内容是否满足以下条件：是否包含有一些球类（如足球、篮球、实心球等），并且这些是在与人互动中。请返回结构化的判断结果。",
+    "use_structured_output": true,
+    "output_file": "result.json",
+    "statistics_file": "statistics.json",
+    "threshold": 0.6
+}

@@ -1,0 +1,10 @@
+# 基础依赖
+openai>=1.0.0
+langchain-core>=0.2.0
+langchain-openai>=0.1.0
+pydantic>=2.0.0
+
+# 可选依赖（用于简单模式或其他功能）
+zhipuai>=2.0.0
+langchain>=0.2.0
+langchain-community>=0.2.0

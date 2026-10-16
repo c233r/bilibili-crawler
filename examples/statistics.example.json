@@ -1,0 +1,73 @@
+{
+  "threshold": 0.6,
+  "description": "satisfied占比超过60.00%才算满足要求",
+  "summary": {
+    "total_videos": 2,
+    "satisfied_videos": 1,
+    "unsatisfied_videos": 1
+  },
+  "details": [
+    {
+      "video_path": "/path/to/downloads/videos/example_video_a.mp4",
+      "total_frames": 4,
+      "satisfied_frames": 1,
+      "unsatisfied_frames": 3,
+      "frame_details": [
+        {
+          "timestamp": 0,
+          "satisfied": true,
+          "reason": "画面中有人正在拍球，球清晰可见"
+        },
+        {
+          "timestamp": 30,
+          "satisfied": false,
+          "reason": "画面中没有出现球类，也没有与人的互动"
+        },
+        {
+          "timestamp": 60,
+          "satisfied": false,
+          "reason": "画面中没有出现球类，也没有与人的互动"
+        },
+        {
+          "timestamp": 90,
+          "satisfied": false,
+          "reason": "画面中没有出现球类，也没有与球类相关的活动"
+        }
+      ],
+      "status": "completed",
+      "satisfied_ratio": 0.25,
+      "threshold": 0.6,
+      "is_satisfied": false,
+      "completed_at": "2026-01-01T00:00:00.000000"
+    },
+    {
+      "video_path": "/path/to/downloads/videos/example_video_d.mp4",
+      "total_frames": 3,
+      "satisfied_frames": 3,
+      "unsatisfied_frames": 0,
+      "frame_details": [
+        {
+          "timestamp": 0,
+          "satisfied": true,
+          "reason": "教练在演示垫球动作，球清晰可见"
+        },
+        {
+          "timestamp": 30,
+          "satisfied": true,
+          "reason": "学员正在练习，画面中有球"
+        },
+        {
+          "timestamp": 60,
+          "satisfied": true,
+          "reason": "教学场景，人与球互动明显"
+        }
+      ],
+      "status": "completed",
+      "satisfied_ratio": 1.0,
+      "threshold": 0.6,
+      "is_satisfied": true,
+      "completed_at": "2026-01-01T00:05:00.000000"
+    }
+  ],
+  "generated_at": "2026-01-01T00:10:00.000000"
+}

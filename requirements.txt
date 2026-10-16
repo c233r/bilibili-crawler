@@ -1,0 +1,25 @@
+# B站视频采集与 VLM 初筛流水线 —— 依赖总览
+#
+# 本文件只是汇总入口，两个子模块各有自己的 requirements.txt：
+#   bilibili爬虫/requirements.txt        爬虫与下载
+#   大模型接入筛选/requirements.txt       VLM 初筛
+#
+# 安装（在某个版本的根目录下执行，例如 v3-resume/）：
+#   pip install -r ../../requirements.txt
+# 或分别安装：
+#   pip install -r bilibili爬虫/requirements.txt
+#   pip install -r 大模型接入筛选/requirements.txt
+
+# ── 爬虫与下载 ────────────────────────────────────────────────
+requests>=2.31.0
+you-get
+yt-dlp
+
+# ── VLM 初筛（智谱 GLM / OpenAI 兼容） ─────────────────────────
+zhipuai
+openai
+Pillow
+opencv-python
+
+# ── 系统依赖（非 pip，需单独安装） ─────────────────────────────
+# ffmpeg    —— 音视频合并，必须可执行且在 PATH 中
